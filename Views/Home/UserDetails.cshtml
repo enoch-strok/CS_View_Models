@@ -1,0 +1,11 @@
+@using CS_View_Models_B.Models
+@model List<User>
+
+@* <h1>Super sweet page for @Model.FirstName @Model.LastName</h1> *@
+<div class="text-center">
+    <h1 class="display-4">Here is a User!</h1>
+</div>
+@foreach(var user in Model)
+{
+    <p>@user.FirstName @user.LastName</p>
+}
